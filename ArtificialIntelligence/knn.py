@@ -117,7 +117,7 @@ para precisão, indica uma porcentagem para a classificação e um erro para a r
 def KNN(trainingSet, testSet, k):
     global classify
     if (len(trainingSet) < k):
-        print('K is set to a value less than total voting groups!')
+        print('K is set to a value bigger than total instances!')
         return;
     predictions = []
     for i in range(len(testSet)):
@@ -130,10 +130,10 @@ def KNN(trainingSet, testSet, k):
         #print('Predito:', result, 'Real:', testSet[i][-1])
     if (classify == True):
         accuracy = GetClassificationAccuracy(testSet, predictions)
-        print('Precisão (maior é melhor):', accuracy)
+        print('Accuracy (bigger is better):', accuracy)
     else:
         accuracy = GetRegressionAccuracy(testSet, predictions)
-        print('Precisão (menor é melhor):', accuracy)
+        print('Accuracy (lower is better):', accuracy)
 
 """
 Tratamento dos dados
