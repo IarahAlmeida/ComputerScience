@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <!-- You MUST include jQuery before Fomantic -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css" />
+        <script src="../semantic/dist/semantic.min.js"></script>
+        <title>Example III</title>
+        <style>
+            .last.container {
+                margin-bottom: 300px !important;
+            }
+            h1.ui.center.header {
+                margin-top: 3em;
+            }
+            h2.ui.center.header {
+                margin: 4em 0em 2em;
+            }
+            h3.ui.center.header {
+                margin-top: 2em;
+                padding: 2em 0em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui container">
+            <h1 class="ui center aligned header">Responsive UI Examples</h1>
+            <h2 class="ui center aligned header">Basic Responsive</h2>
+            <h3 class="ui center aligned header">Container</h3>
+            <div class="ui container">
+                <div class="ui segments">
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Text Container</h3>
+            <div class="ui text container">
+                <div class="ui segments">
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Stackable Grid</h3>
+            <div class="ui two column stackable grid">
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="three column row">
+                    <div class="column">
+                        <div class="ui segment">Content</div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment">Content</div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment">Content</div>
+                    </div>
+                </div>
+                <div class="ten wide column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="six wide column">
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Doubling Grid</h3>
+            <div class="ui three column doubling grid">
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Doubling Stackable Grid</h3>
+            <div class="ui three column doubling stackable grid">
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Nested Stackable Grid</h3>
+            <div class="ui two column grid">
+                <div class="column">
+                    <div class="ui stackable doubling two column grid">
+                        <div class="column">
+                            <div class="ui segment">Content</div>
+                        </div>
+                        <div class="column">
+                            <div class="ui segment">Content</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui stackable doubling three column grid">
+                        <div class="column">
+                            <div class="ui segment">Content</div>
+                        </div>
+                        <div class="column">
+                            <div class="ui segment">Content</div>
+                        </div>
+                        <div class="column">
+                            <div class="ui segment">Content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="ui center aligned header">Device Adjustment</h2>
+            <h3 class="ui center aligned header">Device Column Width</h3>
+            <div class="ui grid">
+                <div class="three wide computer nine wide tablet six wide mobile column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="nine wide computer three wide tablet six wide mobile column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="nine wide computer three wide tablet six wide mobile column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="three wide computer nine wide tablet six wide mobile column">
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Device Visibility</h3>
+            <div class="ui four column grid">
+                <div class="widescreen only ten wide column">
+                    <div class="ui segment">Widescreen</div>
+                </div>
+                <div class="widescreen only six wide column">
+                    <div class="ui segment">Widescreen</div>
+                </div>
+                <div class="large screen only six wide column">
+                    <div class="ui segment">Large Screen</div>
+                </div>
+                <div class="large screen only ten wide column">
+                    <div class="ui segment">Large Screen</div>
+                </div>
+                <div class="tablet only mobile only eight wide column">
+                    <div class="ui segment">Tablet and Mobile</div>
+                </div>
+                <div class="tablet only mobile only eight wide column">
+                    <div class="ui segment">Tablet and Mobile</div>
+                </div>
+                <div class="mobile only sixteen wide column">
+                    <div class="ui segment">Mobile</div>
+                </div>
+                <div class="computer only two column row">
+                    <div class="column">
+                        <div class="ui segment">Computer and Up</div>
+                    </div>
+                    <div class="column">
+                        <div class="ui segment">Computer and Up</div>
+                    </div>
+                </div>
+                <div class="tablet only column">
+                    <div class="ui segment">Tablet Only Content</div>
+                </div>
+                <div class="tablet only column">
+                    <div class="ui segment">Tablet Only Content</div>
+                </div>
+                <div class="tablet only column">
+                    <div class="ui segment">Tablet Only Content</div>
+                </div>
+                <div class="tablet only column">
+                    <div class="ui segment">Tablet Only Content</div>
+                </div>
+            </div>
+            <h2 class="ui center aligned header">Responsive Elements</h2>
+            <h3 class="ui center aligned header">Responsive Vertical Divider</h3>
+            <div class="ui stackable two column very relaxed grid container" style="position: relative">
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+                <div class="ui vertical divider">Or</div>
+                <div class="column">
+                    <div class="ui segment">Content</div>
+                </div>
+            </div>
+            <h3 class="ui center aligned header">Responsive Table</h3>
+            <div class="ui container">
+                <table class="ui celled table" aria-describedby="common table">
+                    <thead>
+                        <th scope="col">Employee</th>
+                        <th scope="col">Correct Guesses</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="ui image header">
+                                    <div class="content">
+                                        Lena
+                                        <div class="sub header">Human Resources
+                                    </div>
+                                </h4>
+                            </td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="ui image header">
+                                    <div class="content">
+                                        Matthew
+                                        <div class="sub header">Fabric Design
+                                    </div>
+                                </h4>
+                            </td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="ui image header">
+                                    <div class="content">
+                                        Lindsay
+                                        <div class="sub header">Entertainment
+                                    </div>
+                                </h4>
+                            </td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="ui image header">
+                                    <div class="content">
+                                        Mark
+                                        <div class="sub header">Executive
+                                    </div>
+                                </h4>
+                            </td>
+                            <td>11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="ui center aligned header">Responsive Menu</h3>
+            <div class="ui stackable container menu">
+                <a class="item">Features</a>
+                <a class="item">Testimonials</a>
+                <a class="item">Sign-in</a>
+            </div>
+            <h3 class="ui center aligned header">Responsive Steps</h3>
+            <div class="ui container">
+                <div class="ui three steps">
+                    <div class="step">
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Review your order details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="ui dividing header">Source</h2>
+            <div class="ui content">
+                <p>Semantic UI: <a href="https://semantic-ui.com/examples/responsive.html">Responsive</a></p>
+            </div>
+        </div>
+    </body>
+</html>

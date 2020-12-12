@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <!-- You MUST include jQuery before Fomantic -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css" />
+        <script src="../semantic/dist/semantic.min.js"></script>
+        <title>Example IV</title>
+        <style>
+            body {
+                padding: 1em;
+            }
+            .color.grid {
+                margin: -1.5em;
+                width: 400px;
+            }
+            .ui.table {
+                table-layout: fixed;
+            }
+            .color.grid .column {
+                margin: 0.5em;
+                width: 50px;
+                height: 50px;
+            }
+            .ui.menu {
+                margin: 3em 0em;
+            }
+            .ui.menu:last-child {
+                margin-bottom: 110px;
+            }
+            .spaced > .button {
+                margin-bottom: 1em;
+            }
+            .ui.table {
+                table-layout: fixed;
+            }
+            .ui.input + .ui.input {
+                margin-left: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui container">
+            <h1 class="ui center aligned header">Extras Examples</h1>
+            <h2 class="ui dividing header">Loader</h2>
+            <div class="ui container">
+                <div class="ui segment">
+                    <p></p>
+                    <div class="ui active dimmer">
+                        <div class="ui loader"></div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="ui dividing header">Reveal</h2>
+            <div class="ui container">
+                <div class="ui fade reveal">
+                    <div class="visible content">
+                        <img src="../assets/nan.jpg" class="ui small image" alt="person" />
+                    </div>
+                    <div class="hidden content">
+                        <img src="../assets/tom.jpg" class="ui small image" alt="person" />
+                    </div>
+                </div>
+            </div>
+            <h2 class="ui dividing header">Popup</h2>
+            <div class="ui container">
+                <div class="ui button">Activator</div>
+                <div class="ui special popup">
+                    <div class="header">Custom Header</div>
+                    <div class="ui button">Dont Click Me</div>
+                </div>
+            </div>
+            <h2 class="ui dividing header">Progress</h2>
+            <div class="ui container">
+                <div class="spaced">
+                    <div class="ui button" onclick="startProgress()">Click Me Once</div>
+                </div>
+                <div class="ui teal progress" data-percent="74" id="example1">
+                    <div class="bar"></div>
+                    <div class="label">74% Funded</div>
+                </div>
+            </div>
+            <h2 class="ui dividing header">Transition</h2>
+            <div class="ui container">
+                <div class="spaced">
+                    <div class="ui button" onclick="startTransition()">Spam Me</div>
+                </div>
+                <img src="../assets/5.png" class="ui long leaf image transition visible" alt="long leaf" />
+            </div>
+            <h2 class="ui dividing header">Source</h2>
+            <div class="ui content">
+                <p><a href="https://semantic-ui.com/">Semantic UI</a></p>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $(".button").popup({ inline: true });
+        });
+        startProgress = () => {
+            $("#example1").progress();
+        };
+        startTransition = () => {
+            $(".long.leaf.image").transition("scale");
+        };
+    </script>
+</html>
